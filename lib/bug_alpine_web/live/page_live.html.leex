@@ -1,0 +1,10 @@
+<section x-data="{count: <%= @count %>}">
+  <h1>The count is (from phoenix): <%= @count %></h1>
+  <h1>The count is (from Alpine): <span x-text="count"></span></h1>
+  <button class="button" phx-click="increment">
+    Increment
+  </button>
+  <button class="button" phx-click="decrement">
+    Decrement
+  </button>
+</section>
