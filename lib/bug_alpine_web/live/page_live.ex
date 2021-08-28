@@ -15,5 +15,4 @@ defmodule BugAlpineWeb.PageLive do
   def handle_event("decrement", _, socket) do
     {:noreply, update(socket, :count, &(&1 - 1))}
   end
-
 end
